@@ -4,7 +4,7 @@ import Experience from "../Experience.js"
 import { EventEmitter } from 'events'
 
 import Environment from './Environment.js'
-import Plateforme10 from './Plateforme10.js'
+import ResQplan from './ResQplan.js'
 import Interests from './Interests.js'
 // import Controls from '../Controls.js'
 
@@ -21,25 +21,25 @@ export default class World extends EventEmitter {
 
     this.resources.on('ready', () => {
       this.environment = new Environment()
-      this.plateforme10 = new Plateforme10()
+      this.ResQplan = new ResQplan()
       this.interests = new Interests()
       // this.controls = new Controls()
       this.emit('worldready')
     })
   }
 
-  resize() {}
+  resize() { }
 
   update() {
-    if(this.plateforme10) {
-      this.plateforme10.update()
+    if (this.ResQplan) {
+      this.ResQplan.update()
     }
 
-    if(this.controls) {
+    if (this.controls) {
       this.controls.update()
     }
 
-    if(this.interests) {
+    if (this.interests) {
       this.interests.update()
     }
   }

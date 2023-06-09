@@ -2,12 +2,12 @@
 
 Interactive map of Plateforme 10 - Lausanne's arts district in Switzerland. The 3D Map was created from scratch using Blender and Three.js. You can view some images of the process down below.
 
-**[> View the live demo](https://plateforme10-interactive-map.vercel.app/)**
+**[> View the live demo](https://ResQplan-interactive-map.vercel.app/)**
 
 
 ## Overview
-<img width="1679" alt="Picture of Plateforme10 Interactive Map" src="https://user-images.githubusercontent.com/98451613/219605875-f181f71f-10b4-4da7-9b25-075d5345e754.png">
-<img width="1679" alt="Picture of Plateforme10 Interactive Map" src="https://user-images.githubusercontent.com/98451613/219605935-2c70ddaf-2355-4a1b-b67d-72a7f6afe835.png">
+<img width="1679" alt="Picture of ResQplan Interactive Map" src="https://user-images.githubusercontent.com/98451613/219605875-f181f71f-10b4-4da7-9b25-075d5345e754.png">
+<img width="1679" alt="Picture of ResQplan Interactive Map" src="https://user-images.githubusercontent.com/98451613/219605935-2c70ddaf-2355-4a1b-b67d-72a7f6afe835.png">
 
 ### Process <a name="process"></a>
 

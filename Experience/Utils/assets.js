@@ -1,23 +1,13 @@
 export default [
   {
-    name: 'plateforme10',
+    name: 'ResQplan',
     type: 'glbModel',
-    path: '/models/plateforme10.glb'
+    path: '/models/F1.glb'
   },
   {
     name: 'textureBuildings',
     type: 'texture',
     path: '/textures/buildings-baked.jpg'
-  },
-  {
-    name: 'textureMdba',
-    type: 'texture',
-    path: '/textures/mdba-baked.jpg'
-  },
-  {
-    name: 'textureMudacDetails',
-    type: 'texture',
-    path: '/textures/mudacDetails-baked.jpg'
   },
   {
     name: 'textureTerrain',

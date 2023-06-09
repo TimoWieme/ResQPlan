@@ -17,22 +17,10 @@ export default class Resources extends EventEmitter {
     this.loaded = 0
     this.loadingProgress = document.querySelector('.loading-progress')
 
-    this.setLoadingManager()
     this.setLoaders()
     this.startLoading()
   }
 
-  setLoadingManager() {
-    this.loadingManager = new THREE.LoadingManager(
-      // Loaded
-      () => {},
-      // Progress
-      (itemUrl, itemsLoaded, itemsTotal) => {
-        this.progressRatio = (itemsLoaded / itemsTotal) * 100
-        this.loadingProgress.innerHTML = Math.round(this.progressRatio)
-      }
-    )
-  }
 
   setLoaders() {
     this.loaders = {}
@@ -44,7 +32,7 @@ export default class Resources extends EventEmitter {
   }
 
   startLoading() {
-    for(const asset of this.assets) {
+    for (const asset of this.assets) {
       if (asset.type === 'texture') {
         this.loaders.textureLoader.load(asset.path, (file) => {
           this.singleAssetLoaded(asset, file)

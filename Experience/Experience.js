@@ -11,14 +11,13 @@ import Scrolling from './Components/Scrolling.js'
 import Camera from './Camera.js'
 import Controls from './Controls.js'
 import Renderer from './Renderer.js'
-import Preloader from './Preloader.js'
-
 import World from './World/World.js'
+
 
 export default class Experience {
   static instance
   constructor(canvas) {
-    if(Experience.instance) {
+    if (Experience.instance) {
       return Experience.instance
     }
     Experience.instance = this
@@ -32,11 +31,8 @@ export default class Experience {
     this.renderer = new Renderer()
     this.resources = new Resources(assets)
     this.world = new World()
-    this.preloader = new Preloader()
+    // this.preloader = new Preloader()
 
-    this.scrolling = new Scrolling({
-      element: document.querySelector('.info-panel-content')
-    })
 
     this.sizes.on('resize', () => {
       this.resize()
@@ -61,10 +57,10 @@ export default class Experience {
     this.camera.update()
     this.world.update()
     this.renderer.update()
-    this.scrolling.update()
 
-    if(this.controls) {
+    if (this.controls) {
       this.controls.update()
     }
   }
+
 }
