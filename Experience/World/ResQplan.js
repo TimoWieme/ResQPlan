@@ -54,7 +54,7 @@ export default class Bike {
         child.material = materialTerrain
       }
 
-      if (child.name.match(/^buildings.*$/)) {
+      if (child.name.match(/^F1.*$/)) {
         child.material = materialBuildings
       }
 
