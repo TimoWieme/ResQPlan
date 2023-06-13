@@ -2,7 +2,7 @@ export default [
   {
     name: 'ResQplan',
     type: 'glbModel',
-    path: '/models/F1.glb'
+    path: '/models/3Dmap.glb'
   },
   {
     name: 'textureBuildings',
