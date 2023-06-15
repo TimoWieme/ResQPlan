@@ -29,37 +29,77 @@ export default class Bike {
   }
 
   setResQplanModel() {
-    const textureBuildings = this.resources.items.textureBuildings
-    textureBuildings.flipY = false
-    textureBuildings.encoding = THREE.SRGBColorSpace
-    const materialBuildings = new THREE.MeshBasicMaterial({ map: textureBuildings })
+    const F1 = this.resources.items.F1
+    F1.flipY = false
+    F1.encoding = THREE.SRGBColorSpace
+    const materialF1 = new THREE.MeshBasicMaterial({ map: F1 })
 
-    const textureTerrain = this.resources.items.textureTerrain
-    textureTerrain.flipY = false
-    textureTerrain.encoding = THREE.SRGBColorSpace
-    const materialTerrain = new THREE.MeshBasicMaterial({ map: textureTerrain })
+    const F2 = this.resources.items.F2
+    F2.flipY = false
+    F2.encoding = THREE.SRGBColorSpace
+    const materialF2 = new THREE.MeshBasicMaterial({ map: F2 })
 
-    const lightPanelTexture = new THREE.MeshBasicMaterial({ color: 0xffffe5 })
+    const F3 = this.resources.items.F3
+    F3.flipY = false
+    F3.encoding = THREE.SRGBColorSpace
+    const materialF3 = new THREE.MeshBasicMaterial({ map: F3 })
+
+    const F4 = this.resources.items.F4
+    F4.flipY = false
+    F4.encoding = THREE.SRGBColorSpace
+    const materialF4 = new THREE.MeshBasicMaterial({ map: F4 })
+
+    const F5 = this.resources.items.F5
+    F5.flipY = false
+    F5.encoding = THREE.SRGBColorSpace
+    const materialF5 = new THREE.MeshBasicMaterial({ map: F5 })
+
+    const F6 = this.resources.items.F6
+    F6.flipY = false
+    F6.encoding = THREE.SRGBColorSpace
+    const materialF6 = new THREE.MeshBasicMaterial({ map: F6 })
+
+    const F7 = this.resources.items.F7
+    F7.flipY = false
+    F7.encoding = THREE.SRGBColorSpace
+    const materialF7 = new THREE.MeshBasicMaterial({ map: F7 })
+
+    const F8 = this.resources.items.F8
+    F8.flipY = false
+    F8.encoding = THREE.SRGBColorSpace
+    const materialF8 = new THREE.MeshBasicMaterial({ map: F8 })
 
     this.actualResQplan.traverse((child) => {
-      if (child.name.match(/^mdba.*$/)) {
-        child.material = materialMdba
+     if (child.name.match(/^F1.*$/)) {
+        child.material = materialF1
       }
 
-      if (child.name.match(/^mudac.*$/)) {
-        child.material = materialMudacDetails
+      if (child.name.match(/^F2.*$/)) {
+        child.material = materialF2
       }
 
-      if (child.name.match(/^terrain.*$/)) {
-        child.material = materialTerrain
+      if (child.name.match(/^F3.*$/)) {
+        child.material = materialF3
       }
 
-      if (child.name.match(/^F1.*$/)) {
-        child.material = materialBuildings
+      if (child.name.match(/^F4.*$/)) {
+        child.material = materialF4
       }
 
-      if (child.name.match(/^lightPanel.*$/)) {
-        child.material = lightPanelTexture
+      if (child.name.match(/^F5.*$/)) {
+        child.material = materialF5
+      }
+
+      if (child.name.match(/^F6.*$/)) {
+        child.material = materialF6
+      }
+
+      if (child.name.match(/^F7.*$/)) {
+        child.material = materialF7
+      }
+
+      if (child.name.match(/^F8.*$/)) {
+        child.material = materialF8
       }
     })
 

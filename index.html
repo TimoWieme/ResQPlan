@@ -4,70 +4,131 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <link rel="stylesheet" href="./appstyle.css">
+  <link rel="stylesheet" href="preloader.css">
+  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#d6d2ca" />
-  <title>ResQplan</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <title>ResQplan firefighter map</title>
 </head>
 
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <!-- Experience -->
+  <div class="experience">
+    <canvas class="experience-canvas"></canvas>
+  </div>
 
-    
-
-
-    <div>
-      <h1>Profiel toevoegen</h1>
-
-      <form action="./submitted.html">
-        <div class="mb-3">
-          <label for="Naam" class="form-label">Naam</label>
-          <input class="form-control">
-        </div>
-        <div class="mb-3">
-          <label for="Verdieping" class="form-label">Verdieping</label>
-          <input class="form-control">
-        </div>
-        <div class="mb-3">
-          <label for="Huisnummer" class="form-label">Huisnummer</label>
-          <input class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Waarom bent u niet zelfredzaam?</label>
-          <select class="form-control" id="exampleFormControlSelect1">
-            <option>Ik ben invalide</option>
-            <option>Ik heb een zuurstoftank</option>
-            <option>Ik ben bejaard</option>
-            <option>Ik ben blind</option>
-          </select>
-        </div>
-        <br/>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+  <!-- Main -->
+  <main>
+    <!-- Points of Interests -->
+    <div class="kamer kamer1">
+      <img class="label rolstoel" src="/images/wheelchair.svg" alt="Logo Rolstoel">
+      <div class="text">Persoon in rolstoel</div>
     </div>
-    
+    <div class="kamer kamer2">
+      <img class="label" src="/images/oxygen.svg" alt="Zuurstoftank logo">
+      <div class="text">Zuurstoftank in kamer</div>
+    </div>
+    <div class="kamer kamer3">
+      <img class="label icn" src="/images/wheelchair.svg" alt="Restaurant Icon">
+      <div class="text">Man in rolstoel + 2 kinderen</div>
+    </div>
+    <div class="kamer kamer4">
+      <img class="label icn" src="/images/fire.svg" alt="Vuur">
+      <div class="text">Vuur gelokaliseerd</div>
+    </div>
+    <div class="kamer kamer5">
+      <img class="label icn" src="/images/oxygen.svg" alt="Restaurant Icon">
+      <div class="text">2 zuurstoftanks </div>
+    </div>
 
-    <footer>
-        <menu class="nav-list">
-            <li class="nav-item-current">
-              <a href="./index.html">
-                <img src="./icons/user.png" alt="">
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="./edit.html">
-                <img src="./icons/edit.png" alt="">
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="./notification.html">
-                <img src="./icons/notification.png" alt="">
-              </a>
-            </li>
-        </menu>
-    </footer>
+    <!-- Info Panels  -->
+    <div class="info-panel">
+      <div class="info-panel-header">
+        <img class="close" src="/images/icn-close.svg" alt="">
+      </div>
+      <div class="info-panel-content">
+        <div class="info-panel-content-wrapper">
+          <img class="info-panel-image" src="" alt="">
+          <img class="info-panel-logo" src="" alt="">
+          <h2 class="info-panel-title"></h2>
+          <p class="info-panel-lead"></p>
+          <p class="info-panel-description"></p>
+          <table>
+            <caption>Schedule</caption>
+            <tr>
+              <th scope="col">Days</th>
+              <th scope="col">Time</th>
+            </tr>
+            <tr>
+              <td class="col-min">Monday</td>
+              <td class="info-panel-monday"></td>
+            </tr>
+            <tr>
+              <td class="col-min">Tuesday</td>
+              <td class="info-panel-tuesday"></td>
+            </tr>
+            <tr>
+              <td class="col-min">Wednesday</td>
+              <td class="info-panel-wednesday"></td>
+            </tr>
+            <tr>
+              <td class="col-min">Thursday</td>
+              <td class="info-panel-thursday"></td>
+            </tr>
+            <tr>
+              <td class="col-min">Friday</td>
+              <td class="info-panel-friday"></td>
+            </tr>
+            <tr>
+              <td class="col-min">Saturday</td>
+              <td class="info-panel-saturday"></td>
+            </tr>
+            <tr>
+              <td class="col-min">Sunday</td>
+              <td class="info-panel-sunday"></td>
+            </tr>
+          </table>
+          <table>
+            <caption>Contact</caption>
+            <tbody>
+              <tr>
+                <th class="col-min" scope="row">Phone</th>
+                <td class="info-panel-phone"></td>
+              </tr>
+              <tr>
+                <th class="col-min" scope="row">Email</th>
+                <td class="info-panel-email"></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <a class="info-panel-website" href="" target="_blank">
+            <button>Visit website</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="controls">
+      <p class="controls-mouse">
+        Mouse Controls<br><br>
+        Left - Rotate<br>
+        Right - Move<br>
+        Middle - Zoom
+      </p>
+      <p class="controls-touch">
+        Controls<br><br>
+        One Finger Drag - Rotate<br>
+        Two Finger Drag - Move<br>
+        Pinch/Spread - Zoom<br>
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
 </body>
 
-
+</html>
