@@ -10,7 +10,7 @@ div {
   margin-top: 10%;
 }
 
-.notification-container {
+.app-container {
   height: 75vh;
   overflow-y: scroll;
 }
