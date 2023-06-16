@@ -39,7 +39,7 @@ export default class Interests {
   setInterests() {
     this.points = [
       {
-        position: new THREE.Vector3(-9, 1.2, -9),
+        position: new THREE.Vector3(-8, 11, -8),
         element: document.querySelector('.kamer1')
       },
       {
@@ -51,12 +51,16 @@ export default class Interests {
         element: document.querySelector('.kamer3')
       },
       {
-        position: new THREE.Vector3(9, 0.17, 7),
+        position: new THREE.Vector3(-6, 26, 5.5),
         element: document.querySelector('.kamer4')
       },
       {
-        position: new THREE.Vector3(6, 0.17, -4),
+        position: new THREE.Vector3(6, 26, -4),
         element: document.querySelector('.kamer5')
+      },
+      {
+        position: new THREE.Vector3(-6, 16, -6),
+        element: document.querySelector('.kamer6')
       },
     ]
 
@@ -105,6 +109,7 @@ export default class Interests {
     const kamer3 = document.querySelector('.kamer3')
     const kamer4 = document.querySelector('.kamer4')
     const kamer5 = document.querySelector('.kamer5')
+    const kamer6 = document.querySelector('.kamer6')
 
     if (this.device === 'desktop') {
       infoPanelRightStyle = '-33%'

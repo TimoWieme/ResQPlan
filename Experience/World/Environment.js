@@ -27,9 +27,9 @@ export default class Environment {
     //Add light
     // var light = new THREE.AmbientLight(0xffffff);
     // this.scene.add(light);
-    this.bgColor = 0xd6d2ca
+    this.bgColor = 0xABA8A2
     this.scene.background = new THREE.Color(this.bgColor)
-    this.scene.fog = new THREE.Fog(this.bgColor, 5, 20)
+    // this.scene.fog = new THREE.Fog(this.bgColor, 5, 20)
   }
 
   resize() { }

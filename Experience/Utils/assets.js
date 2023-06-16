@@ -2,16 +2,46 @@ export default [
   {
     name: 'ResQplan',
     type: 'glbModel',
-    path: '/models/3Dmap.glb'
+    path: '/models/3DmapRetry.glb'
   },
   {
-    name: 'textureBuildings',
+    name: 'F1',
     type: 'texture',
-    path: '/textures/buildings-baked.jpg'
+    path: '/textures/floor_textures/F1.png'
   },
   {
-    name: 'textureTerrain',
+    name: 'F2',
     type: 'texture',
-    path: '/textures/terrain-baked.jpg'
-  }
+    path: '/textures/floor_textures/F2.png'
+  },
+  {
+    name: 'F3',
+    type: 'texture',
+    path: '/textures/floor_textures/F3.png'
+  },
+  {
+    name: 'F4',
+    type: 'texture',
+    path: '/textures/floor_textures/F4.png'
+  },
+  {
+    name: 'F5',
+    type: 'texture',
+    path: '/textures/floor_textures/F5.png'
+  },
+  {
+    name: 'F6',
+    type: 'texture',
+    path: '/textures/floor_textures/F6.png'
+  },
+  {
+    name: 'F7',
+    type: 'texture',
+    path: '/textures/floor_textures/F7.png'
+  },
+  {
+    name: 'F8',
+    type: 'texture',
+    path: '/textures/floor_textures/F8.png'
+  },
 ]
