@@ -10,6 +10,11 @@ div {
   margin-top: 10%;
 }
 
+.notification-container {
+  height: 75vh;
+  overflow-y: scroll;
+}
+
 .notification {
   background-color: rgb(216, 216, 216);
   border-radius: 20px;
